@@ -1,0 +1,198 @@
+*{	padding: 0;	margin: 0;	border: 0;}
+*,*:before,*:after{	-moz-box-sizing: border-box;	-webkit-box-sizing: border-box;	box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{height: 100%;	width: 100%;font-size: 100%;line-height: 1;font-size: 14px;-ms-text-size-adjust: 100%;-moz-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	background-image: url(../img/f7f247edee357f3d868fe9fd8a2712d5.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+._container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	position: relative;
+}
+.page__tabs {
+	padding: 100px 0 0 0;
+	display: flex;
+	margin: 0 0 40px 0;
+}
+.page__tab {
+	flex: 1 1 33.333%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #000;
+	font-size: 30px;
+	height: 80px;
+	border: 2px solid #2165aa;
+	background: rgb(240,249,255);
+	background: -moz-linear-gradient(top,  rgb(240,249,255) 0%, rgb(203,235,255) 47%, rgb(161,219,255) 100%); 
+	background: -webkit-linear-gradient(top,  rgb(240,249,255) 0%,rgb(203,235,255) 47%,rgb(161,219,255) 100%); 
+	background: linear-gradient(to bottom,  rgb(240,249,255) 0%,rgb(203,235,255) 47%,rgb(161,219,255) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f9ff', endColorstr='#a1dbff',GradientType=0 ); 
+}
+.page__tab.active{
+	font-weight: 700;
+}
+.page__body {
+	flex: 1 0 auto;
+}
+.page__content {
+	display: none;
+	padding: 0 20px;
+}
+.page__content:target {
+	display: block;
+}
+.page__content p{
+	font-size: 20px;
+	color: #ffffff;
+	line-height: 32px;
+}
+.page__title {
+	font-size: 50px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translate(-50%,50%);
+	color: #ffffff;
+}
+.page__table {
+	font-size: 16px;
+	margin: 0 0 0 35%;
+	transform: translate(-27%,0);
+}
+.table {}
+.table__line {
+	display: flex;
+	height: 25px;
+	text-align: center;
+	line-height: 20px;
+	background-color: #efefef;
+}
+.table__line_main {
+	background-color: #000;
+	color: #ffffff;
+}
+.table__number {
+	max-width: 100px;
+	width: 100%;
+	border: 1px solid #ffffff;
+}
+.table__country {
+	max-width: 140px;
+	width: 100%;
+	border: 1px solid #ffffff;
+}
+.table__player {
+	max-width: 250px;
+	width: 100%;
+	border: 1px solid #ffffff;
+}
+.table__points {
+	max-width: 100px;
+	width: 100%;
+	border: 1px solid #ffffff;
+}
+.table__points_red {
+	color: red;
+}
+.table__line_yellow {
+	color: yellow;
+	background-color: #cccccc;
+}
+.table__line_grey {
+	color: #cccccc;
+}
+.table__line_orange {
+	color: orange;
+	background-color: #cccccc;
+}
+.table__line_bold {
+	font-weight: 700;
+	font-style: italic;
+}
+.table__line_gr{
+	background-color: #cccccc;
+}
+.page__footer {}
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer__img {
+	width: 150px;
+	height: 150px;
+}
+.footer__img img{
+	width: 100%;
+	height: 100%;
+}
+.footer__text {
+	font-size: 18px;
+	padding: 0 50px;
+	max-width: 600px;
+	color: #ffffff;
+	line-height: 28px;
+}
+.page__form {
+	display: flex;
+	justify-content: space-between;
+}
+.form {}
+.form__area {
+	display: block;
+	width: 250px;
+	height: 80px;
+	padding: 7px 15px;
+	font-size: 16px;
+}
+.form__name {
+	display: block;
+	width: 250px;
+	padding: 7px 15px;
+	font-size: 16px;
+}
+.form__contact {
+	display: block;
+	width: 250px;
+	padding: 7px 15px;
+	font-size: 16px;
+}
+.form__button{
+	display: block;
+	height: 30px;
+	width: 100px;
+	font-size: 16px;
+	margin: 20px 0 0 0;
+	cursor: pointer;
+}
+.form__result {
+	padding: 50px 0 0 100px;
+	font-size: 20px;
+	line-height: 28px;
+	color: #ffffff;
+}
